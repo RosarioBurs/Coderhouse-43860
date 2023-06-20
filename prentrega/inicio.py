@@ -19,12 +19,16 @@ def guardar_datos():
         json.dump(base_datos, archivo, indent=4)
 
 def cargar_datos():
-    ...
+    with open(RUTA_BASE_DATOS, "r") as archivo:
+        global base_datos
+        base_datos = json.load(archivo)
 
 def mostrar_datos():
-    ...
+    print(base_datos)
 
 def main():
+    cargar_datos()
     ingresar_datos()
+    mostrar_datos()
     
 main()
