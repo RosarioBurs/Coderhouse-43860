@@ -10,5 +10,13 @@
     {
         "nombre": "Daniel ",
         "password": "555"
+    },
+    {
+        "nombre": "",
+        "password": ""
+    },
+    {
+        "nombre": "Rosario",
+        "password": "Burs"
     }
 ]
